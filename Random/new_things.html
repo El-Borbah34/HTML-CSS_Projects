@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Cats.
+        </title>
+    </head>
+    <style>
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+      }
+      
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: 150%;
+        left: 50%;
+        margin-left: -60px;
+      }
+      
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+    </style>
+        <body>
+           <div class="tooltip">
+                <span class="tooltiptext">Pick an Answer!</span>
+                    <label for="coolest_cat">The Best Cat is:</label>
+                        <input type="text" id="coolest_cat" list="cat_list">
+                            <datalist id="cat_list">
+                                <option>Bamboo Cat</option>
+                                <option>Stinky Cat</option>
+                                <option>Sleepy Cat</option>
+                                <option>Angry Cat</option>
+                            </datalist>
+                    <input type="submit">
+            </div>
+
+        </body>
+</html>

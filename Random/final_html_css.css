@@ -1,0 +1,111 @@
+
+/*========================================================
+                NAV BAR
+=========================================================*/
+
+.navbar {
+    color: cyan;
+    background-color: darkgreen;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    margin: auto;
+    
+}
+
+.navbar li  {
+    display: inline-block
+    
+}
+
+li  {
+    text-align: center;
+}
+
+
+.navbar li:hover    {
+    color: gold;
+    background-color: black;
+}
+
+/*===============================================================
+                    PICTURE
+===============================================================*/
+
+ img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: hue-rotate(90deg);
+    border-radius: 30px 40px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: darkturquoise;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*===========================================================
+                    TABLE
+==========================================================*/
+
+table   {
+    font-family: cursive;
+    border-collapse: unset;
+    width: 100%;
+    color: fuchsia;
+}
+
+td, th  {
+    border: 3px dotted red;
+    text-align: center;
+    padding: .5rem;
+}
+
+th  {
+    background-color: seagreen;
+}
+
+tr:nth-child(odd)   {
+    background-color: royalblue;
+}
+
+/*======================================================
+                    COLUMN
+=========================================================*/
+
+.row    {
+    display: table;
+}
+.column {
+    float: left;
+    width: 20%;
+    height: 200px;
+    padding: 3em;
+}
+
+.column p   {
+    color: chartreuse;
+}
+
+/*============================================================
+                    FOOTER
+============================================================*/
+
+footer {
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
+
