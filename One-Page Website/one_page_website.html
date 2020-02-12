@@ -50,31 +50,63 @@
 					<!--END VIDEOS-->
 					
 					<!--PICTURES-->
-					<section>
-						<div id="pictures">
-							<h2>Look through the pictures!</h2>
-							<img src="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2012/11/152964589-welcome-home-new-cat-632x475.jpg" alt="Cat 1">
-							<p>Aww too<strong>cute</strong>!</p>
+					<div id="pictures" class="photoBox">
+						<h3>Look through the cat pictures</h3>
+						<div class="photoContainer">
+							<img src="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2012/11/152964589-welcome-home-new-cat-632x475.jpg" onclick="openModal();currentSlide(1)" class="hover_shadow" alt="Cat 1">
 						</div>
-							<br>
-							<br>
-						<div>
-							<img src="https://img.huffingtonpost.com/asset/5dcc613f1f00009304dee539.jpeg?cache=QaTFuOj2IM&ops=crop_834_777_4651_2994%2Cscalefit_720_noupscale" alt="Cat 2">
-							<p>He is a little <b>big</b> but its okay.</p>
+						<div class="photoContainer">
+							<img src="https://img.huffingtonpost.com/asset/5dcc613f1f00009304dee539.jpeg?cache=QaTFuOj2IM&ops=crop_834_777_4651_2994%2Cscalefit_720_noupscale" onclick="openModal();currentSlide(2)" class="hover_shadow" alt="Cat 2">
 						</div>
-							<br>
-							<br>
-						<div>
-							<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg?crop=0.670xw:1.00xh;0.147xw,0&resize=480:*" alt="Cat 3">
-							<p>Very<i> Cool</i> Cat.</p>
+						<div class="photoContainer">
+							<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg?crop=0.670xw:1.00xh;0.147xw,0&resize=480:*" onclick="openModal();currentSlide(3)" class="hover_shadow" alt="Cat 3">
 						</div>
-							<br>
-							<br>
-						<div>
-							<img src="https://images.foxtv.com/static.fox32chicago.com/www.fox32chicago.com/content/uploads/2019/12/764/432/yoda-cat.jpg?ve=1&tl=1" alt="Cat YODA">
-							<p>Now this Cat looks like Baby Yoda!</p>
+						<div class="photoContainer">
+							<img src="https://images.foxtv.com/static.fox32chicago.com/www.fox32chicago.com/content/uploads/2019/12/764/432/yoda-cat.jpg?ve=1&tl=1" onclick="openModal();currentSlide(4)" class="hover_shadow" alt="Cat YODA">
 						</div>
-					</section>
+					</div>
+
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modalContent">
+
+							<div class="mySlides">
+								<div class="numberText">1/4</div>
+								<img src="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2012/11/152964589-welcome-home-new-cat-632x475.jpg" style="width: 100%;">
+							</div>
+							<div class="mySlides">
+								<div class="numberText">2/4</div>
+								<img src="https://img.huffingtonpost.com/asset/5dcc613f1f00009304dee539.jpeg?cache=QaTFuOj2IM&ops=crop_834_777_4651_2994%2Cscalefit_720_noupscale" style="width: 100%;">
+							</div>
+							<div class="mySlides">
+								<div class="numberText">3/4</div>
+								<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg?crop=0.670xw:1.00xh;0.147xw,0&resize=480:*" style="width: 100%;">
+							</div>
+							<div class="mySlides">
+								<div class="numberText">4/4</div>
+								<img src="https://images.foxtv.com/static.fox32chicago.com/www.fox32chicago.com/content/uploads/2019/12/764/432/yoda-cat.jpg?ve=1&tl=1" style="width: 100%;">
+							</div>
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							<div class="caption-Container">
+								<p id="caption"></p>
+							</div>
+							
+							<div class="photoContainer">
+								<img class="demo cursor" src="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2012/11/152964589-welcome-home-new-cat-632x475.jpg" style="width: 100%;" onclick="currentSlide(1)" alt="">
+							</div>
+							<div class="photoContainer">
+								<img class="demo cursor" src="https://img.huffingtonpost.com/asset/5dcc613f1f00009304dee539.jpeg?cache=QaTFuOj2IM&ops=crop_834_777_4651_2994%2Cscalefit_720_noupscale" style="width: 100%;" onclick="currentSlide(2)" alt="">
+							</div>
+							<div class="photoContainer">
+								<img class="demo cursor" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg?crop=0.670xw:1.00xh;0.147xw,0&resize=480:*" style="width: 100%;" onclick="currentSlide(3)" alt="">
+							</div>
+							<div class="photoContainer">
+								<img class="demo cursor" src="https://images.foxtv.com/static.fox32chicago.com/www.fox32chicago.com/content/uploads/2019/12/764/432/yoda-cat.jpg?ve=1&tl=1" style="width: 100%;" onclick="currentSlide(4)" alt="">
+							</div>
+						</div>
+					</div>
 					<!--END PICTURES-->
 					
 					<!--CONTACT FORM-->
@@ -95,7 +127,7 @@
 							</form>
 						</section>
 					<!--END CONTACT FORM-->
-					
+			<script src="JS/one_page_website.js"></script>	
 			</body>
 			<!--FOOTER-->
 			<footer>
