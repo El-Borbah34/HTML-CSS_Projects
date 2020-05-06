@@ -1,5 +1,5 @@
 # HTML-and-CSS-Projects
-This repository contains all of my assignments and projects that pertains with HTML and CSS during my four and a half months @The Tech Academy. 
+This repository contains all of my assignments and projects that pertains with HTML and CSS during my four and a half months @TheTechAcademy. 
 This respository allowed me to gain the knowledge of complex web design, by being able to keep track of my progress as well as being able to go back and see what I learned and how I learned it. 
 
 ## Please feel free to look through my repository!
