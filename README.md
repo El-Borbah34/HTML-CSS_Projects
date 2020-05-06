@@ -1,4 +1,4 @@
-# HTML-and-CSS-Projects
+# HTML and CSS Projects
 This repository contains all of my assignments and projects that pertains with HTML and CSS during my time with the Tech Academy. These assignments and projects range anywhere from basic understanding of structure of code to how to implement both together 
 to make a website(basic) that has style and some functionality.
 
